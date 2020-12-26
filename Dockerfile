@@ -13,6 +13,12 @@ RUN wget https://github.com/kiwenlau/compile-hadoop/releases/download/2.7.2/hado
     mv hadoop-2.7.2 /usr/local/hadoop && \
     rm hadoop-2.7.2.tar.gz
 
+
+# copy the test files
+RUN wget https://onedrive.live.com/edit.aspx?resid=E86841EE950E4540!126&cid=c7adb71a-80af-489b-b136-ffdcac26ad23&ithint=file%2cxlsx&wdOrigin=OFFICECOM-WEB.MAIN.MRU 
+   
+
+
 # set environment variable
 ENV JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64 
 ENV HADOOP_HOME=/usr/local/hadoop 
